@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            background-color: red;
+        }
+        .white1 {
+            background-color: white;
+            grid-column: 3 span;
+        }
+        .white2 {
+            background-color: white;
+            grid-row: 2 span;
+        }
+        .white3 {
+            background-color: white;
+            grid-column: 2 span;
+            grid-row: 2 span;
+        }
+        .white4 {
+            background-color: white;
+            grid-row: 2 span;
+        }
+        .blue {
+            background-color: blue;
+            border-bottom: 15px solid black;
+        }
+        .yellow {
+            background-color: yellow;
+        }
+        .grey {
+            background-color: grey;
+        }
+        .container {
+            height: 748px;
+            width: 748px;
+            display: grid;
+            background-color: black;
+            grid-template-columns: 320px 198px 153px 50px;
+            grid-template-rows: 414px 130px 155px 22px;
+            gap: 9px;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item red"></div>
+        <div class="item white1"></div>
+        <div class="item white2"></div>
+        <div class="item white3"></div>
+        <div class="item blue"></div>
+        <div class="item white4"></div>
+        <div class="item white4"></div>
+        <div class="item yellow"></div>
+        <div class="item grey"></div>
+    </div>
+</body>
+</html>
